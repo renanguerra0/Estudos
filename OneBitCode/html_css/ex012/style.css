@@ -1,0 +1,19 @@
+
+* {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.background-amarelo{
+    background-color: #f1c40f;
+    color: black;
+    border: solid;
+}
+
+h4{
+    color: #f1c40f;
+}
+
+.aula-astronomia{
+    color: #e74c3c;
+}

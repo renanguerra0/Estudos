@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(214, 255, 209);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(15, 122, 1);
+}
+
+/* Em HTML o termo 'id=' é equivalente ao CSS o termo '#' 
+   Em HTML o termo 'class' é equivalente ao CSS o termo '.' (ponto)
+*/
+h1#principal {
+    text-align: center;
+    background-color: green;
+    color: white;
+}
+
+h2 {
+    color: rgb(74, 100, 71);
+}
+
+.basico {
+    color: rgb(15, 122, 1);
+    font-weight: bolder;
+}
+
+.intermediario {
+    color: rgb(122, 114, 1)
+}
+
+.avancado {
+    color: rgb(122, 25, 1)
+}
+
+.destaque {
+    background-color: rgba(204, 204, 92, 0.452);
+}

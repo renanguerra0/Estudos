@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms, label e input</title>
+</head>
+<body>
+    <h2>Encontre no Google</h2>
+    <form action="https://www.google.com.br/search">
+        <label for="testando">O que deseja pesquisar?</label> <!--O "for" do label é vinculado com o "id" do input-->
+        <input type="text" id="testando" name="q" placeholder="Digite aqui" required> <!--Caixa de pesquisa-->
+        <input type="submit" value="Pesquisar"> <!--Botão-->
+    </form>
+    <br>
+    <h2>Validação de e-mail</h2>
+    <form action="https://www.google.com.br/search">
+        <label for="testando">Digite seu e-mail</label>
+        <input type="email" id="testando" name="q" placeholder="Digite aqui" required> 
+        <input type="submit" value="Pesquisar">
+    </form>
+    <br>
+    <h2>Limitando a busca por números</h2>
+    <form action="https://www.google.com.br/search">
+        <label for="testando">Digite seu e-mail</label>
+        <input type="number" id="testando" name="q" placeholder="Digite aqui" required min="3" max="7">
+        <input type="submit" value="Pesquisar">
+    </form>
+    
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+/*Seletor '*' serve para selecionar todos os elementos*/
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/*Seletor da herança: Tudo que herdar (estiver dentro) da tag <li>*/
+li  a {
+    color: red;
+}
+
+/*Seletor filho: Tudo que for filho '>' da tag <li> */
+li > a {
+    color: aqua;
+}
+
+/*Todas as tags <a> que forem filhas da tag <label> */
+label > a {
+    color: rgb(231, 0, 231);
+}
+
+/*Seletor adjacente: Todo <h4> que vier imediatamente após o <h1>*/
+h1 + h4{
+    border: 4px dashed;
+}
+
+/*Seletor de atributo: Todas as tags <a> que possuem o atributo href='teste' */
+a[href='teste'] {
+    background-color: gray;
+}
+
+/*Seleciona o 2ª <li> de cada <ul>*/
+li:nth-of-type(2){
+    color: rgb(80, 160, 0);
+}

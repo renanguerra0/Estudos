@@ -1,0 +1,16 @@
+li {
+    color: green;
+}
+
+h1{
+    font-size: 50px;
+    color: purple;
+    border: 2px dashed yellow;
+}
+
+body{
+    background-image: url(https://files.meiobit.com/wp-content/uploads/2019/09/20190930efvbpwuxuaauy5w.jpg);
+    background-repeat: no-repeat; /*Imagem para de se repetir*/
+    background-size: cover; /*Capa*/
+    font-weight: bolder;
+}
