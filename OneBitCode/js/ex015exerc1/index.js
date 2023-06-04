@@ -1,11 +1,12 @@
 
-let nome = window.prompt("Insira seu nome")
-let sobrenome = window.prompt("Insira seu sobrenome")
-let campoestudo = window.prompt("Insira o campo de estudo:")
-let anonascimento = window.prompt("Insira seu ano de nascimento")
+const primeiroNome = prompt("Informe o primeiro nome:")
+const sobrenome = prompt("Informe o sobrenome:")
+const campoDeEstudo = prompt("Qual é o campo de estudo?")
+const anoDeNascimento = prompt("Qual é o ano de nascimento?")
 
-console.log(nome)
-console.log(sobrenome)
-console.log(campoestudo)
-let idade = 2023 - anonascimento
-console.log(idade)
+alert(
+    "Recruta cadastrado com sucesso!\n" +
+    "\nNome completo: " + primeiroNome + " " + sobrenome +
+    "\nCampo de Estudo: " + campoDeEstudo +
+    "\nIdade: " + (2023 - anoDeNascimento)
+)
