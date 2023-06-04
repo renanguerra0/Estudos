@@ -2,7 +2,7 @@
 const entrada1 = window.prompt("Insira o primeiro número")
 const entrada2 = window.prompt("Insira o segundo número")
 
-const num1 = parseFloat(entrada1) //O parseFloat serve para converter uma String em um número
+const num1 = parseFloat(entrada1) //O parseFloat serve para converter uma String em um número 
 const num2 = parseFloat(entrada2)
 
 const soma = num1 + num2
