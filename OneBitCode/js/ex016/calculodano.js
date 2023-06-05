@@ -13,6 +13,14 @@ if (poderAtaquePersona1 > defesaPersona2 && escudoPersona2 == "N"){
 
     alert("Personagem 1:\n" + "NOME: " + nomePersona1 + "\n" + "PODER DE ATAQUE: " + poderAtaquePersona1 + "\n" +
     "Personagem 2:\n" + "NOME: " + nomePersona2 + "\n" + "VIDA: " + vidaAtualizada + "\n" + "DEFESA: " + defesaPersona2 + "\n" + "ESCUDO: " + escudoPersona2 + "\n" + "DANO SOFRIDO: " + dano)
-} else{
-    alert("ERROR")
+} else if (poderAtaquePersona1 > defesaPersona2 && escudoPersona2 == "S"){
+    dano = poderAtaquePersona1 - defesaPersona2
+    danoEscudo = dano / 2
+    vidaAtualizada1 = vidaPersona2 - danoEscudo
+
+    alert("Personagem 1:\n" + "NOME: " + nomePersona1 + "\n" + "PODER DE ATAQUE: " + poderAtaquePersona1 + "\n" +
+    "Personagem 2:\n" + "NOME: " + nomePersona2 + "\n" + "VIDA: " + vidaAtualizada1 + "\n" + "DEFESA: " + defesaPersona2 + "\n" + "ESCUDO: " + escudoPersona2 + "\n" + "DANO SOFRIDO: " + danoEscudo)
+} else if (poderAtaquePersona1 <= defesaPersona2) {
+    alert("Personagem 1:\n" + "NOME: " + nomePersona1 + "\n" + "PODER DE ATAQUE: " + poderAtaquePersona1 + "\n" +
+    "Personagem 2:\n" + "NOME: " + nomePersona2 + "\n" + "VIDA: " + vidaPersona2 + "\n" + "DEFESA: " + defesaPersona2 + "\n" + "ESCUDO: " + escudoPersona2 + "\n" + "DANO SOFRIDO: 0")
 }
