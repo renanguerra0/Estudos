@@ -1,26 +1,25 @@
 
-const nomePersona1 = prompt("Digite o nome do personagem 1: ")
-const poderAtaquePersona1 = prompt("Digite o poder de ataque do personagem 1: ") 
+const atacante = prompt("Qual é o nome do personagem atacante?")
+const poderDeAtaque = parseFloat(prompt("Qual é o seu poder de ataque?"))
 
-const nomePersona2 = prompt("Digite o nome do personagem 2: ")
-const vidaPersona2 = prompt("Digite a quantidade de vida do personagem 2:")
-const defesaPersona2 = prompt("Digite a quantidade de defesa do personagem 2: ")
-const escudoPersona2 = prompt("O personagem 2 possui um escudo? (Responda com S para SIM ou N para NÃO)")
+const defensor = prompt("Qual é o nome do personagem defensor?")
+let pontosDeVida = parseFloat(prompt("Quantos pontos de vida ele possui?"))
+const poderDeDefesa = parseFloat(prompt("Qual é o seu poder de defesa?"))
+const possuiEscudo = prompt("Ele possui um escudo? (Sim/Não)")
 
-if (poderAtaquePersona1 > defesaPersona2 && escudoPersona2 == "N"){
-    dano = poderAtaquePersona1 - defesaPersona2
-    vidaAtualizada = vidaPersona2 - dano
+let danoCausado = 0
 
-    alert("Personagem 1:\n" + "NOME: " + nomePersona1 + "\n" + "PODER DE ATAQUE: " + poderAtaquePersona1 + "\n" +
-    "Personagem 2:\n" + "NOME: " + nomePersona2 + "\n" + "VIDA: " + vidaAtualizada + "\n" + "DEFESA: " + defesaPersona2 + "\n" + "ESCUDO: " + escudoPersona2 + "\n" + "DANO SOFRIDO: " + dano)
-} else if (poderAtaquePersona1 > defesaPersona2 && escudoPersona2 == "S"){
-    dano = poderAtaquePersona1 - defesaPersona2
-    danoEscudo = dano / 2
-    vidaAtualizada1 = vidaPersona2 - danoEscudo
-
-    alert("Personagem 1:\n" + "NOME: " + nomePersona1 + "\n" + "PODER DE ATAQUE: " + poderAtaquePersona1 + "\n" +
-    "Personagem 2:\n" + "NOME: " + nomePersona2 + "\n" + "VIDA: " + vidaAtualizada1 + "\n" + "DEFESA: " + defesaPersona2 + "\n" + "ESCUDO: " + escudoPersona2 + "\n" + "DANO SOFRIDO: " + danoEscudo)
-} else if (poderAtaquePersona1 <= defesaPersona2) {
-    alert("Personagem 1:\n" + "NOME: " + nomePersona1 + "\n" + "PODER DE ATAQUE: " + poderAtaquePersona1 + "\n" +
-    "Personagem 2:\n" + "NOME: " + nomePersona2 + "\n" + "VIDA: " + vidaPersona2 + "\n" + "DEFESA: " + defesaPersona2 + "\n" + "ESCUDO: " + escudoPersona2 + "\n" + "DANO SOFRIDO: 0")
+if (poderDeAtaque > poderDeDefesa && possuiEscudo ==="Não"){
+    danoCausado = poderDeAtaque - poderDeDefesa
+} else if (poderDeAtaque > poderDeDefesa && possuiEscudo === "Sim") {
+    danoCausado =(poderDeAtaque - poderDeDefesa) / 2
 }
+
+pontosDeVida -= danoCausado
+
+
+alert(atacante + " causou " + danoCausado + " pontos de dano em " + defensor)
+
+alert(atacante + "\nPoder de ataque: " + poderDeAtaque + "\n\n" +
+    defensor + "\nPontos de vida: " + pontosDeVida +
+    "\nPoder de defesa: " + poderDeDefesa + "\nEscudo: " + possuiEscudo)
