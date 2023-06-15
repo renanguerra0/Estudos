@@ -29,7 +29,6 @@ while (escolhas !== 3){
 */
 
 
-
 //Utilizando o DO WHILE
 
 let saldo = parseFloat(prompt("Informe a quantioadde de dinheiro inicial: "))
