@@ -22,7 +22,7 @@ let ultimoElemento = arr.pop()
 console.log(arr)
 console.log(ultimoElemento)
 
-//shift: remover elemtno no começo do array
+//shift: remover elemento no começo do array
 ultimoElemento = arr.shift()
 console.log(arr)
 console.log(ultimoElemento)
@@ -49,3 +49,24 @@ const outros = arr.slice(-4) //O número negativo conta de trás para frente
 console.log(arr)
 console.log(hobbitts)
 console.log(outros)
+
+//concat: juntar arrays
+const sociedade = hobbitts.concat(outros, "Boromir")
+console.log(sociedade)
+
+
+
+//SUBSTITUINDO OS ELEMENTOS
+
+//splice: pode remover um grupo de elementos do array substituindo-os por outros. Estrutura: splice(onde começar a remover os elementos, quantos elementos serão removidos, elementos substitutos)
+const a = sociedade.splice(indice, 1, "Gandalf, o Cinzento")
+console.log(sociedade)
+console.log(a)
+
+
+
+// ITERAR SOBRE OS ELEMENTOS DO ARRAY (PERCORRER)
+for (let indice = 0; indice < sociedade.length; indice++){
+    const elemento = sociedade[indice]
+    console.log(elemento + " se encontra na posição " + indice)
+}

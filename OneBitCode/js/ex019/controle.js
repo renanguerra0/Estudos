@@ -47,7 +47,7 @@ do {
         break
 
         case "2":
-        saldo -= parseFloat(prompt("Informe o valor a ser adicionado:"))
+        saldo -= parseFloat(prompt("Informe o valor a ser removido:"))
         break
 
         case "3":
