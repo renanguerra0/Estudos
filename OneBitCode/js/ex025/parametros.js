@@ -54,7 +54,7 @@ function muitosParametros(nome, telefone, endereco, aniversario, email, senha){
 muitosParametros("nome", "telefone", "endereco", "aniversario", "email", "senha")
 
 
-//Conforme exemplo acima, uma função com muitos parâmetros pode se tornar difícil de se ler com o tempo. Dito isso, podemos transformar esse variados parâmetros em um objeto, visando um melhor controle e organização. 
+//Conforme exemplo acima, uma função com muitos parâmetros pode se tornar difícil de se ler com o tempo. Dito isso, podemos transformar esses variados parâmetros em um objeto, visando um melhor controle e organização. 
 function ObjetoComoParametro(usuario){
     usuario.nome
     usuario.telefone
