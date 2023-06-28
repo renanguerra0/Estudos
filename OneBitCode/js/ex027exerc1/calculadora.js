@@ -1,3 +1,4 @@
+/*
 opcao = "";
 
 do {
@@ -86,3 +87,79 @@ do {
 
   }
 } while (opcao != "6"){}
+*/
+
+
+function calcularAreaTriangulo(){
+  const base = prompt("Informe a base do triângulo:")
+  const altura = prompt("Informe a latura do triângulo:")
+  return (base * altura)/2
+}
+
+function calcularAreaRetangulo(){
+  const base = prompt("Informe a base do retângulo:")
+  const altura = prompt("Informe a latura do retângulo:")
+  return base * altura
+}
+
+function calcularAreaQuadrado(){
+  const lado = prompt("Informe o lado do quadrado")
+  return lado * lado
+}
+
+function calcularAreaTraprezio(){
+  const baseMaior = parseFloat(prompt("Informe a base maior do trapézio:"))
+  const baseMenor = parseFloat(prompt("Informe a base menor do trapézio"))
+  const altura = prompt("Informe a altura do trapézio")
+  return (baseMaior + baseMenor) * altura / 2
+}
+
+function calcularAreaCirculo(){
+  const raio = prompt("Informe o raio do círculo")
+  return 3.14 * raio * raio
+}
+
+function exibirMenu(){
+  return prompt("CALCULADORA GEOMÉTRICA:\n" + "1. Calcular área do triângulo\n" + "2. Calcular área do retângulo\n" +
+  "3. Calcular área do quadrado\n" + "4. Calcular área do trapézio\n" + "5. Calcular área do círculo\n" + "6. Sair\n")
+}
+
+function executar(){
+  let opcao = ""
+
+  do {
+    opcao = exibirMenu()  //Chamando a função para exibir o menu
+
+    let resultado
+
+    switch (opcao){
+      case "1":
+        resultado = calcularAreaTriangulo()
+        break
+      case "2":
+        resultado = calcularAreaRetangulo()
+        break
+      case "3":
+        resultado = calcularAreaQuadrado()
+        break
+      case "4":
+        resultado = calcularAreaTraprezio()
+        break
+      case "5":
+        resultado = calcularAreaCirculo()
+        break
+      case "6":
+        alert("Saindo...")
+        break
+      default:
+        alert("Opção inválida.")
+    }
+  
+    if (resultado){
+      alert("Resultado: " + resultado) //Informa na tela o resultado de uma das funções
+    }
+
+  } while(opcao != "6"){}
+}
+
+executar()
