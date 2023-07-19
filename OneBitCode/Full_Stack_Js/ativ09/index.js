@@ -1,14 +1,16 @@
 
-velocidade = 150
+function reduzirVelocidade(velocidade, imprimir){
+    let desacelerar = 20
 
-let desacelerar = function desacelerando(){
-    velocidade -= 20
-    return
+    while(velocidade > 0){
+        imprimir(velocidade)
+        velocidade -= desacelerar
+    }
+    alert("Nave parada. As comportas podem ser abertas.")
 }
 
-while (velocidade > 0){
-    desacelerar()
-    alert("Velocidade atual: " + velocidade)
-}
+let velocidadeNave = 150
 
-alert("A nave está parada e as comportas podem ser abertas")
+reduzirVelocidade(velocidadeNave, function(velocidade){
+    console.log("Velocidade atual: " + velocidade)
+})
