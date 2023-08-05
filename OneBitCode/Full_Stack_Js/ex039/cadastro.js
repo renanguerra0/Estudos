@@ -7,6 +7,14 @@ function criarLabel(text, htmlFor){
 }
 
 
-function createInput(id, value, naema, type='text', placeholder = '') {
-    const 
+function createInput(id, value, name, type='text', placeholder = '') {
+    const input= document.createElement('input')
+    input.id = id
+    input.value = value
+    input.name = name
+    input.type = type
+    input.placeholder = placeholder
+    return input
 }
+
+
