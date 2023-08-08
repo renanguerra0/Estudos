@@ -4,26 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Devs</title>
-    <script src="cadastro.js"></script>
+    <script src="cadastro.js" defer></script>
 </head>
 <body>
     <h1>Cadastro de Devs</h1>
     <hr>
 
-    <h2>Cadastrar Desenvolvedores</h2>
+    <h2>Cadastrar Novo Desenvolvedor</h2>
+    <form id="devForm">
+        <label for="fullname">Nome Completo:</label>
+        <input type="text" name="fullname" id="fullname"><br><br>
 
-    <form id="formulario">
-        <label for="name">Nome:</label>
-        <br>
-        <input type="text" id="nome" name="nome">
-        <br><br>
+        <label>Tecnologias</label><br>
+        <button type="button" id="addTechBtn">Adicionar Nova</button>
 
-        <label>Tecnologias</label>
-        <button id="addTecnologia" type="button">Adicionar Nova</button>
-        <ul id="listaTecnologias"></ul>
+        <ul id="stackInputs"></ul>
         <br>
         <button type="submit">Cadastrar</button>
-
     </form>
 
     
