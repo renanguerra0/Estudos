@@ -9,7 +9,7 @@ function useDarkTheme(){
     document.body.style.backgroundColor = 'black'
 }
 
-function switchTheme(){
+function switchTheme(){ //O toggle serve para alternar
     document.body.classList.toggle('is-light')
     document.body.classList.toggle('is-dark')
 }
