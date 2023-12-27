@@ -1,0 +1,20 @@
+
+Não existem variáveis
+As chaves das propriedades devem possuir " " (aspas duplas)
+Arrays e objetos aninhados podem existir
+Proibido ter trailing comma (vírgula no último item de um bloco)
+Funções e comentários não são permitidos
+Suporta apenas tipos primitivos (string, number, boolean, null)
+
+{
+    "nome": "Joao",
+    "idade": 24,
+    "email": "joao@firma.com",
+    "telefone": ["1155556554", "1156565667"],
+    "enderecos": {
+        "rua": "R. Jose de Alencar",
+        "numero": 1548,
+        "apartamento": true,
+        "complemento": "ap 934"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "nome": "Joao",
+    "idade": 24,
+    "email": "joao@firma.com",
+    "telefone": ["1155556554", "1156565667"],
+    "enderecos": {
+        "rua": "R. Jose de Alencar",
+        "numero": 404,
+        "apartamento": true,
+        "complemento": "ap 934"
+    }
+}
